@@ -1,0 +1,15 @@
+
+**/.terraform/*
+*.tfstate
+*.tfstate.*
+crash.log
+
+__pycache__/
+*.pyc
+.venv/
+
+node_modules/
+dist/
+
+.env
+.env.*
