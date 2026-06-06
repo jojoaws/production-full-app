@@ -1,9 +1,12 @@
 from flask import Flask, request, jsonify
+from flask_cors import CORS
 import boto3
 import os
 import uuid
 
 app = Flask(__name__)
+
+CORS(app)
 
 dynamodb = boto3.resource(
     "dynamodb",
