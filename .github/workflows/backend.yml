@@ -33,12 +33,6 @@ jobs:
             -t ${{ secrets.ECR_REPOSITORY }}:${{ env.IMAGE_TAG }} \
             ./backend
 
-      - name: Debug Variables
-        run: |
-          echo "ACCOUNT=${{ secrets.AWS_ACCOUNT_ID }}"
-          echo "REGION=${{ secrets.AWS_REGION }}"
-          echo "REPO=${{ secrets.ECR_REPOSITORY }}"
-
       - name: Tag Docker Image
         run: |
           docker tag \
