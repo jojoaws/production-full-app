@@ -1,10 +1,10 @@
 Production Full App
-Overview
-Full-stack AWS application deployed using Terraform.
+- Overview
+- Full-stack AWS application deployed using Terraform.
 
 Architecture
-React (S3 as static website) -> ALB -> ECS Fargate (Flask) -> DynamoDB
-File Uploads -> S3
+- React (S3 as static website) -> ALB -> ECS Fargate (Flask) -> DynamoDB
+- File Uploads -> S3
 
 Technologies
 - Terraform
@@ -26,7 +26,7 @@ Features
 - CI/CD pipeline
 
 Deployment
-terraform apply
-npm run build
-aws s3 sync ...
+- terraform apply
+- npm run build
+- aws s3 sync ...
 
